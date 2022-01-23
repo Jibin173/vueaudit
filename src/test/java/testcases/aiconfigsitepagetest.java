@@ -77,7 +77,7 @@ public class aiconfigsitepagetest extends TestBase {
 	    loginpage.Login();
 	    sitepage.camera_view();
 	}
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC8() {
 		Log.info("Check whether user will be able to delete camera details under particular site");
 	    System.out.println("Check whether user will be able to delete camera details under particular site");
@@ -85,7 +85,7 @@ public class aiconfigsitepagetest extends TestBase {
 	    sitepage.delete();
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC9() {
 		Log.info("Check whether user will be able to edit camera details under particular site");
 	    System.out.println("Check whether user will be able to edit camera details under particular site");
