@@ -36,7 +36,7 @@ public class aiconfigsitepagetest extends TestBase {
 		}
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC3() {
     Log.info("To Check whether user will be able to add site");
     System.out.println("To Check whether user will be able to add site");
@@ -45,7 +45,7 @@ public class aiconfigsitepagetest extends TestBase {
 	 	
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC4() {
 		Log.info("Check if it is possible for a user to navigate to the  site list section from add site section");
 	    System.out.println("Check if it is possible for a user to navigate to the  site list section from add site section");
@@ -53,7 +53,7 @@ public class aiconfigsitepagetest extends TestBase {
 	    sitepage.to_sitelist();
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC5() {
 		Log.info("Check whether user will be able to cancel add site selection");
 	    System.out.println("Check whether user will be able to cancel add site selection");
@@ -62,7 +62,7 @@ public class aiconfigsitepagetest extends TestBase {
 	}
 	
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC6() {
 		Log.info("Check whether user will be able to add site by using add new site");
 	    System.out.println("Check whether user will be able to add site by using add new site");
@@ -70,7 +70,7 @@ public class aiconfigsitepagetest extends TestBase {
 	    sitepage.addsitebutton();
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC7() {
 		Log.info("Check whether user will be able to view list of cameras under particular site");
 	    System.out.println("Check whether user will be able to view list of cameras under particular site");
