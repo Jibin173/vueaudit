@@ -56,7 +56,7 @@ public class aiconfigLoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=2, enabled=true,dependsOnMethods= {"TC1"})
+	@Test(priority=2, enabled=true)
 	public void TC2() throws IOException {
 		Log.info("To Validate Sign-in button using invalid username and invalid password");
 		System.out.println("To Validate Sign-in button using invalid username and invalid password");

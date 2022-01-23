@@ -5,6 +5,8 @@
     <classes>
       <class name="testcases.aiconfigsitepagetest">
         <methods>
+          <include name="TC5"/>
+          <include name="TC6"/>
           <include name="teardownmethod"/>
           <include name="TC3"/>
           <include name="setup"/>

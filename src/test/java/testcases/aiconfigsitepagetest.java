@@ -36,7 +36,7 @@ public class aiconfigsitepagetest extends TestBase {
 		}
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC3() {
     Log.info("To Check whether user will be able to add site");
     System.out.println("To Check whether user will be able to add site");
@@ -45,13 +45,54 @@ public class aiconfigsitepagetest extends TestBase {
 	 	
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC4() {
 		Log.info("Check if it is possible for a user to navigate to the  site list section from add site section");
 	    System.out.println("Check if it is possible for a user to navigate to the  site list section from add site section");
 	    loginpage.Login();
 	    sitepage.to_sitelist();
 	}
+	
+	@Test(enabled=false)
+	public void TC5() {
+		Log.info("Check whether user will be able to cancel add site selection");
+	    System.out.println("Check whether user will be able to cancel add site selection");
+	    loginpage.Login();
+	    sitepage.cancel();
+	}
+	
+	
+	@Test(enabled=false)
+	public void TC6() {
+		Log.info("Check whether user will be able to add site by using add new site");
+	    System.out.println("Check whether user will be able to add site by using add new site");
+	    loginpage.Login();
+	    sitepage.addsitebutton();
+	}
+	
+	@Test(enabled=false)
+	public void TC7() {
+		Log.info("Check whether user will be able to view list of cameras under particular site");
+	    System.out.println("Check whether user will be able to view list of cameras under particular site");
+	    loginpage.Login();
+	    sitepage.camera_view();
+	}
+	@Test(enabled=true)
+	public void TC8() {
+		Log.info("Check whether user will be able to delete camera details under particular site");
+	    System.out.println("Check whether user will be able to delete camera details under particular site");
+	    loginpage.Login();
+	    sitepage.delete();
+	}
+	
+	@Test(enabled=true)
+	public void TC9() {
+		Log.info("Check whether user will be able to edit camera details under particular site");
+	    System.out.println("Check whether user will be able to edit camera details under particular site");
+	    loginpage.Login();
+	    sitepage.edit_camera();
+	}
+	
 	
 	@AfterMethod
 	public void teardownmethod() {

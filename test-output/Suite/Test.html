@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 19 21:53:54 IST 2022</td>
+<td>Started on:</td><td>Fri Jan 21 17:32:50 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>227 seconds (227906 ms)</td>
+<tr><td>Total time:</td><td>253 seconds (253783 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,16 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcases.aiconfigsitepagetest.TC3()'><b>TC3</b><br>Test class: testcases.aiconfigsitepagetest</td>
 <td><div><pre>java.lang.AssertionError: Site was not added Sucessfully expected [http://3.109.160.64:4201/aiconfig/site/list] but found [http://3.109.160.64:4201/aiconfig/site/add]
-	at com.vueaudit.qa.pages.aiconfigAddSite.addsite(aiconfigAddSite.java:63)
+	at com.vueaudit.qa.pages.aiconfigAddSite.addsite(aiconfigAddSite.java:78)
 	at testcases.aiconfigsitepagetest.TC3(aiconfigsitepagetest.java:44)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace754707140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace754707140'><pre>java.lang.AssertionError: Site was not added Sucessfully expected [http://3.109.160.64:4201/aiconfig/site/list] but found [http://3.109.160.64:4201/aiconfig/site/add]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040623756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2040623756'><pre>java.lang.AssertionError: Site was not added Sucessfully expected [http://3.109.160.64:4201/aiconfig/site/list] but found [http://3.109.160.64:4201/aiconfig/site/add]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
-	at com.vueaudit.qa.pages.aiconfigAddSite.addsite(aiconfigAddSite.java:63)
+	at com.vueaudit.qa.pages.aiconfigAddSite.addsite(aiconfigAddSite.java:78)
 	at testcases.aiconfigsitepagetest.TC3(aiconfigsitepagetest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -114,8 +114,87 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>43</td>
-<td>testcases.aiconfigsitepagetest@59cba5a</td></tr>
+<td>16</td>
+<td>testcases.aiconfigsitepagetest@1bd39d3c</td></tr>
+<tr>
+<td title='testcases.aiconfigsitepagetest.TC5()'><b>TC5</b><br>Test class: testcases.aiconfigsitepagetest</td>
+<td><div><pre>java.lang.IllegalAccessError: class com.vueaudit.qa.pages.aiconfigAddSite (in unnamed module @0x64412d34) cannot access class jdk.internal.org.jline.utils.Log (in module jdk.internal.le) because module jdk.internal.le does not export jdk.internal.org.jline.utils to unnamed module @0x64412d34
+	at com.vueaudit.qa.pages.aiconfigAddSite.cancel(aiconfigAddSite.java:105)
+	at testcases.aiconfigsitepagetest.TC5(aiconfigsitepagetest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440926517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440926517'><pre>java.lang.IllegalAccessError: class com.vueaudit.qa.pages.aiconfigAddSite (in unnamed module @0x64412d34) cannot access class jdk.internal.org.jline.utils.Log (in module jdk.internal.le) because module jdk.internal.le does not export jdk.internal.org.jline.utils to unnamed module @0x64412d34
+	at com.vueaudit.qa.pages.aiconfigAddSite.cancel(aiconfigAddSite.java:105)
+	at testcases.aiconfigsitepagetest.TC5(aiconfigsitepagetest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>testcases.aiconfigsitepagetest@1bd39d3c</td></tr>
+<tr>
+<td title='testcases.aiconfigsitepagetest.TC6()'><b>TC6</b><br>Test class: testcases.aiconfigsitepagetest</td>
+<td><div><pre>java.lang.AssertionError: Site was not added Sucessfully expected [http://3.109.160.64:4201/aiconfig/site/list] but found [http://3.109.160.64:4201/aiconfig/site/add]
+	at com.vueaudit.qa.pages.aiconfigAddSite.addsitebutton(aiconfigAddSite.java:133)
+	at testcases.aiconfigsitepagetest.TC6(aiconfigsitepagetest.java:70)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799316869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1799316869'><pre>java.lang.AssertionError: Site was not added Sucessfully expected [http://3.109.160.64:4201/aiconfig/site/list] but found [http://3.109.160.64:4201/aiconfig/site/add]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.vueaudit.qa.pages.aiconfigAddSite.addsitebutton(aiconfigAddSite.java:133)
+	at testcases.aiconfigsitepagetest.TC6(aiconfigsitepagetest.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>testcases.aiconfigsitepagetest@1bd39d3c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,18 +206,23 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcases.aiconfigLoginPageTest.TC1()'><b>TC1</b><br>Test class: testcases.aiconfigLoginPageTest</td>
 <td></td>
-<td>8</td>
-<td>testcases.aiconfigLoginPageTest@3d246ea3</td></tr>
+<td>7</td>
+<td>testcases.aiconfigLoginPageTest@59cba5a</td></tr>
 <tr>
 <td title='testcases.aiconfigLoginPageTest.TC2()'><b>TC2</b><br>Test class: testcases.aiconfigLoginPageTest</td>
 <td></td>
-<td>7</td>
-<td>testcases.aiconfigLoginPageTest@3d246ea3</td></tr>
+<td>6</td>
+<td>testcases.aiconfigLoginPageTest@59cba5a</td></tr>
 <tr>
 <td title='testcases.aiconfigsitepagetest.TC4()'><b>TC4</b><br>Test class: testcases.aiconfigsitepagetest</td>
 <td></td>
-<td>22</td>
-<td>testcases.aiconfigsitepagetest@59cba5a</td></tr>
+<td>21</td>
+<td>testcases.aiconfigsitepagetest@1bd39d3c</td></tr>
+<tr>
+<td title='testcases.aiconfigsitepagetest.TC7()'><b>TC7</b><br>Test class: testcases.aiconfigsitepagetest</td>
+<td></td>
+<td>17</td>
+<td>testcases.aiconfigsitepagetest@1bd39d3c</td></tr>
 </table><p>
 </body>
 </html>

@@ -6,7 +6,7 @@
       <class name="testcases.aiconfigsitepagetest">
         <methods>
           <include name="teardownmethod"/>
-          <include name="TC3"/>
+          <include name="TC9"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.aiconfigsitepagetest -->
